@@ -15,7 +15,7 @@ import musicalRobot.Condition;
 import musicalRobot.Mode;
 import musicalRobot.musicalTrainer;
 
-public class musicTestTwo {
+public class testTwo {
 	public static void main(String[] args) throws IOException {
 		File testSong1 = new File("test1.wav");
 		File testSong2 = new File("dumb.wav");
@@ -24,11 +24,11 @@ public class musicTestTwo {
 		CameraFlagger<Condition> camera = new CameraFlagger<>();
 		LandmarkFlagger<Condition> landmarker = new LandmarkFlagger<>(musicalTrainer.FILENAME);
 		//change these values
-		landmarker.add(Condition.NO_OBJECT, 1, 4, 5, 7)
-		  .add(Condition.OBJECT_ONE, 3)
-		  .add(Condition.OBJECT_TWO, 6)
-		  .add(Condition.OBJECT_THREE, 9)
-		  .add(Condition.VEER_LEFT, 0, 8, 2);
+		landmarker.add(Condition.NO_OBJECT,0,3,2,6,10,11,4)
+		  .add(Condition.OBJECT_ONE, 8)
+		  .add(Condition.OBJECT_TWO, 1)
+		  .add(Condition.OBJECT_THREE, 7)
+		  .add(Condition.VEER_LEFT, 9,2,5);
 		camera.addSub(landmarker);
 		StateClassifier<Condition> sensors = new StateClassifier<>(Condition.class);
 		sensors.add(camera);

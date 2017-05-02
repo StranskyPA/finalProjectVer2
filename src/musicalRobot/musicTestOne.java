@@ -83,6 +83,8 @@ public class musicTestOne {
 				})
 				.mode(Mode.TURN, () -> {
 					Motor.D.resetTachoCount();
+					Motor.A.setSpeed(100);
+					Motor.D.setSpeed(100);
 					Motor.A.backward();
 					Motor.D.forward();
 				});
