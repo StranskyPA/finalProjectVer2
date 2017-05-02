@@ -19,7 +19,7 @@ public class musicTestOne {
 	public static void main(String[] args) throws IOException {
 		File testSong1 = new File("test1.wav");
 		File testSong2 = new File("dumb.wav");
-		File testSong3 = new File("putFileNameHere.wav");
+		File testSong3 = new File("test3.wav");
 		
 		MotorFlagger<Condition> backupFlag = new MotorFlagger<>(Motor.D);
 		backupFlag.add2(Condition.STOP_1_DONE, Condition.BUSY, i -> Math.abs(i) < Math.abs(1));
