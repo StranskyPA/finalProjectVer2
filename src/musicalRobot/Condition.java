@@ -1,0 +1,5 @@
+package musicalRobot;
+
+public enum Condition {
+	NO_OBJECT, OBJECT_ONE, OBJECT_TWO, OBJECT_THREE, STOP_1_DONE, STOP_2_DONE, STOP_3_DONE, BUSY, VEER_LEFT;
+}
